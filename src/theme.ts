@@ -1,8 +1,13 @@
+// import { useEffect } from 'react';
 import type { Theme } from 'theme-ui'
+// import WebFont from 'webfontloader';
+
 
 export const theme: Theme = {
+      
+
   fonts: {
-      header: '"Dm Sans, sans-serif'
+      header: '"DM Sans", sans-serif'
   },
   fontWeights:{
       heading: 500,
@@ -14,11 +19,6 @@ export const theme: Theme = {
       para: '0.938rem',
       button: '0.875'
   },
-//   lineHeights: {
-//       heading: '2.5rem',
-//       para: '1.25rem',
-//       button: '1rem'
-//   },
   colors: {
       heading: '#151A30',
       text: '#2E3A59',
@@ -29,6 +29,7 @@ export const theme: Theme = {
       headerBtn: {
           backgroundColor: '#EDF1F7',
           color: '#222B45',
+          fontFamily: 'header',
           fontSize: 'button',
           fontWeight: 'button',
           cursor: 'pointer'
@@ -38,23 +39,24 @@ export const theme: Theme = {
       heading: {
           fontWeight: 'heading',
           color: 'heading',
+          fontFamily: 'header'
       },
       paragraph: {
           fontWeight: 'para',
           color: 'text',
+          fontFamily: 'header'
       }
   },
   images:{
       edit: {
-          url: "./images/edit.png",
           width: "50px",
           height: "50px"
       }
   },
-  styles: {
-      root: {
-          fontFamily: 'header',
-          fontSize: '1rem',
-      }
-  }
+//   styles: {
+//       root: {
+//           fontFamily: 'header',
+//           fontSize: '1rem',
+//       }
+//   }
 }
