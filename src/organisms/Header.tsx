@@ -1,10 +1,13 @@
 import HeaderInfo from '../molecules/HeaderInfo';
+import WebsiteBuilder from '../molecules/WebsiteBuilder';
+import { Container } from 'theme-ui';
 
 const Header = () => {
   return (
-    <div>
+    <Container p='2em'>
       <HeaderInfo />
-    </div>
+      <WebsiteBuilder></WebsiteBuilder>
+    </Container>
   );
 };
 

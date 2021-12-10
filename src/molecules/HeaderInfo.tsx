@@ -4,15 +4,17 @@ import { Heading, IconButton, Button, Flex, Container, Paragraph } from "theme-u
 
 const HeaderInfo = () => {
   return (
-    <Container p='2em'>
+    <Container p='1em'>
       <Flex
         sx={{
           justifyContent: "space-between",
         }}
       >
         <Flex>
-          <Heading as="h3">Website</Heading>
-          <IconButton aria-label="Toggle dark mode" ml="1em" sx={{cursor: 'pointer'}}>
+          <Heading as="h3" sx={{
+            fontSize: '1.875rem'
+          }}>Website</Heading>
+          <IconButton aria-label="Toggle dark mode" ml=".5em" mt='.2em' sx={{cursor: 'pointer'}}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="14px"
@@ -31,7 +33,8 @@ const HeaderInfo = () => {
       </Flex>
       <Paragraph sx={{
         textAlign: 'left',
-        margin: '.25em'
+        margin: '.25em',
+        fontSize: '0.938rem'
       }}>Create, edit and manage your website with all elements and features.</Paragraph>
     </Container>
   );
