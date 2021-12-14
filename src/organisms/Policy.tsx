@@ -1,6 +1,6 @@
 import { Container } from "@theme-ui/components";
-import PolicyInfo from "../molecules/PolicyInfo";
 import PoliciesContainer from "../molecules/PoliciesContainer";
+import PolicyInfo from "../molecules/PolicyInfo";
 
 const Policy = () => {
     return (
