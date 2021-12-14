@@ -1,21 +1,22 @@
 /** @jsxImportSource theme-ui */
 
-import { ThemeProvider, Container } from 'theme-ui';
+import createStore from "./bundles";
+import { ThemeProvider, Container } from "theme-ui";
 import { theme } from "./theme";
-import WebsiteBuilder from "./organisms/Websitebuilder";
-import CustomDomain from './organisms/CustomDomain'
-import Policy from './organisms/Policy';
+import Website from "./pages/Website";
+const { Provider }  = require('redux-bundler-react')
 
+const store = createStore();
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container p='2em'>
-        <WebsiteBuilder></WebsiteBuilder>
-        <CustomDomain></CustomDomain>
-        <Policy></Policy>
-      </Container>
-    </ThemeProvider> 
+      <Provider store={store}>
+        <Container p="2em">
+          <Website></Website>
+        </Container>
+      </Provider>
+    </ThemeProvider>
   );
 }
 
